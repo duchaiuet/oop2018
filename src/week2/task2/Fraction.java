@@ -2,10 +2,10 @@
 
 import java.util.Scanner;
 
-class fraction{
+public class Fraction{
 	protected int numerator, denominator ;
-	fraction(){};
-	fraction (int a, int b)
+	Fraction(){};
+	Fraction (int a, int b)
 	{
 		this.numerator = a;
 		this.denominator = b;
@@ -25,8 +25,8 @@ class fraction{
 		}
 		return a;
 	}
-	fraction add (fraction a ) {
-		fraction b = new fraction();
+	Fraction add (Fraction a ) {
+		Fraction b = new Fraction();
 		if ( this.denominator == a.denominator) {
 			b.numerator = this.numerator + a.numerator;
 			b.denominator = this.denominator;
