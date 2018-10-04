@@ -8,6 +8,7 @@ public class Task1 {
 		else return fibonacci(n-1)+fibonacci(n-2);
 		
 	}
+
 	static int gcd(int a, int b )
 	{
 		a = Math.abs(a);
