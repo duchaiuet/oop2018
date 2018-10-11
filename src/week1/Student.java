@@ -1,9 +1,9 @@
 ﻿//package week1;
 //
 //public class Student {
-//	// TODO: khai báo các thuộc tính cho Student
+
 //     String Name, Id, Email, Group;
-//    // TODO: khai báo các phương thức getter, setter cho Student
+
 //    public String getName()
 //    {
 //        return Name;
@@ -61,12 +61,7 @@
 //        this.Group = "INT22041";
 //        this.Email = em;
 //    }
-//
-//    /**
-//     * Constructor 3
-//     * @param s
-//     */
-//
+
 //    public Student(Student s) {
 //        // TODO:
 //        this.Name = s.Name;

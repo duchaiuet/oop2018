@@ -45,8 +45,8 @@ public class Week3Test {
 		assertEquals(c.calculateBMI(72.3,1.65 ), "Beo phi");
 		assertEquals(c.calculateBMI(67.8,1.66 ), "Thua can");
 	}
-}
+
 	
 	
 	}
-}	
+	
