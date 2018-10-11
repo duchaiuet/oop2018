@@ -7,7 +7,7 @@ package week4.task2;
  */
 public class Circle extends Shape{
 	double radius = 1.0;
-	double PI = 3.14;
+	final double PI = 3.14;
 	/**
 	 * hàm khởi tạo mặc định
 	 */
