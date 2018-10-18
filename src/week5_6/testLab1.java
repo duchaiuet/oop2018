@@ -4,10 +4,6 @@ public class testLab1 {
 
 	public static void main(String[] args) {
 		Layer a = new Layer();
-		//a.shape.add(new Square());
-		//a.shape.add(new Square());
-		//a.deteleSameShape();
-		//System.out.println(a.shape.size());
 		a.shape.add(new Circle());
 		a.shape.add(new Circle());
 		a.shape.add(new Triangle());
