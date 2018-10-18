@@ -17,7 +17,7 @@ public class Square extends Rectangle{
 	 */
 	public Square(double side)
 	{
-		this.lenghth = this.width = side;
+		this.lenghth = side;
 	};
 	/**
 	 * hàm khởi tạo có tham số diện tích, màu , tính chất
@@ -49,7 +49,7 @@ public class Square extends Rectangle{
 	}
 	/**
 	 * hàm lây giá trị cho chiều rộng (cạnh hình vuông)
-	 * @param side diện tích
+	 * @param side cạnh bên
 	 */
 	public void setWith(double side)
 	{
@@ -57,7 +57,7 @@ public class Square extends Rectangle{
 	}
 	/**
 	 * hàm lấy giá trị cho chiều dài (cạnh hình vuông)
-	 * @param side diện tích 
+	 * @param side cạnh bên
 	 */
 	public void setLength(double side)
 	{
