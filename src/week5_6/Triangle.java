@@ -1,5 +1,7 @@
 package week5_6;
 
+import java.awt.Graphics;
+
 public class Triangle extends Shape{
 private double a;
 private double b;
@@ -42,5 +44,15 @@ public void setC(double c) {
 }
 public boolean isSameTriangle(Triangle a) {
 	return super.isSame(a)&&a.getA()==this.a&&a.getB()==this.b&&a.getC()==this.c;
+}
+@Override
+public void Run() {
+	// TODO Auto-generated method stub
+	
+}
+@Override
+public void Draw(Graphics g) {
+	// TODO Auto-generated method stub
+	
 }
 }

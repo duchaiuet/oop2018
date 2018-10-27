@@ -1,31 +1,17 @@
 package week5_6;
 
+import java.awt.Graphics;
 
-
-public class Shape {
-private double x=0;
-private double y =0;
-private String color;
+public abstract class Shape extends Layer{
+Point velocity ;
+protected String color;
 private boolean filled;
 public Shape() {
-	
 }
-public Shape(double x,double y) {
-	this.setX(x);
-	this.setY(y);
+public Shape(int _x,int _y) {
+	velocity = new Point(_x, _y);
 }
-public double getX() {
-	return x;
-}
-public void setX(double x) {
-	this.x = x;
-}
-public double getY() {
-	return y;
-}
-public void setY(double y) {
-	this.y = y;
-}
+
 public String getColor() {
 	return color;
 }
@@ -39,6 +25,8 @@ public void setFilled(boolean filled) {
 	this.filled = filled;
 }
 public boolean isSame(Shape o) {
-	return(this.x==o.getX()&&this.y==o.getY());
+	return(this.velocity.x==o.velocity.x && this.velocity.y==o.velocity.y);
 }
-}
+public abstract void Run();
+public abstract void Draw(Graphics g);
+	}

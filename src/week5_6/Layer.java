@@ -8,7 +8,7 @@ import java.util.Set;
 import week5_6.Shape;
 import week5_6.Triangle;
 
-public class Layer {
+public abstract class Layer extends Diagram{
 ArrayList<Shape> shape = new ArrayList<Shape>();
 
 // xoa hinh chu nhat

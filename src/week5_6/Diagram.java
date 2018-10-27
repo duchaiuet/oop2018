@@ -2,10 +2,13 @@ package week5_6;
 
 import java.util.ArrayList;
 
+import javax.swing.JFrame;
+
 import week5_6.Layer;
 
-public class Diagram {
-	
+public abstract class Diagram extends JFrame{
+	protected int Width = 600;
+	protected int Height = 800;
 	public ArrayList<Layer> layer = new ArrayList<Layer>();
 	// xoa hinh tron trong layer
 	public int deleteCricle() {

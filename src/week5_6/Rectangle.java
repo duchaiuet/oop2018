@@ -1,5 +1,7 @@
 package week5_6;
 
+import java.awt.Graphics;
+
 import javax.swing.plaf.BorderUIResource;
 
 import week5_6.Shape;
@@ -7,6 +9,10 @@ import week5_6.Shape;
 public class Rectangle extends Shape {
 private double width =1.0;
 private double  length =0;
+protected Point A;
+protected Point B;
+protected Point C;
+protected Point D;
  public  Rectangle () {
 	 
  }
@@ -23,9 +29,9 @@ public  Rectangle (double width,double length,String color,boolean filled) {
 	this.setFilled(filled);
 }
 // lay chieu rong
-public double getWidth() {
-	return width;
-}
+//public int getWidth() {
+//	return (int) width;
+//}
 // set chieu rong
 public void setWidth(double width) {
 	this.width = width;
@@ -38,21 +44,23 @@ public double getLength() {
 public void setLength(double length) {
 	this.length = length;
 }
-// tinh dien tinh
-public double getArea() {
-	
-	return(this.getLength()*this.getWidth());
-}
-// tinh chu vi
-public double getPerimeter() {
-	return (2*(this.getWidth()+this.getLength()));
-}
+
 // cover to String
 public String toString() {
 	return super.toString()+this.getLength()+this.getWidth();
 }
 public boolean isSame(Shape o) {
 	return super.isSame(o);
+}
+@Override
+public void Run() {
+	// TODO Auto-generated method stub
+	
+}
+@Override
+public void Draw(Graphics g) {
+	// TODO Auto-generated method stub
+	
 }
 
 }
