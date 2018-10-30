@@ -1,10 +1,10 @@
 package week7.task1;
 
-public class Addition extends BinaryExpression{
+public class Division extends BinaryExpression{
 	Expression left;
 	Expression right;
 	
-	public Addition (Expression a, Expression b)
+	public Division (Expression a, Expression b)
 	{
 		this.left = a;
 		this.right = b;
@@ -14,22 +14,24 @@ public class Addition extends BinaryExpression{
 		// TODO Auto-generated method stub
 		return left;
 	}
+
 	@Override
 	public Expression right() {
-		// TODO Auto-generated method stub 
+		// TODO Auto-generated method stub
 		return right;
 	}
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
 		String s = Integer.toString(this.evaluate());
 		return s;
 	}
+
 	@Override
 	public int evaluate() {
 		// TODO Auto-generated method stub
-		return this.left.evaluate()+this.right.evaluate();
+		return this.left.evaluate()/this.right.evaluate();
 	}
-	
-	
+
 }
