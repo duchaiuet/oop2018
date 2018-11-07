@@ -38,38 +38,49 @@ public class Utils  {
 		pw.flush(); 
 		pw.close();
 	}
-	public static void write(String path) 
-	{
+//	public static void write(String path) 
+//	{
+//		File file = new File(path);
+//		Scanner sc = new Scanner(System.in);
+//			try {
+//				FileWriter fw = new FileWriter(file);
+//				for(int i = 1; i <= 10; i++)
+//				{
+//					String a;
+//					a = sc.nextLine();
+//					fw.write(a + "\n");
+//					fw.flush();
+//				}
+//				fw.close();
+//			} catch (IOException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//			
+//		
+//	}
+	public static void writeContentToFile(String path) throws IOException {
 		File file = new File(path);
 		Scanner sc = new Scanner(System.in);
-			try {
-				FileWriter fw = new FileWriter(file);
-				for(int i = 1; i <= 10; i++)
-				{
-					String a;
-					a = sc.nextLine();
-					fw.write(a + "\n");
-					fw.flush();
-				}
-				fw.close();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+		try {
+			FileWriter fw = new FileWriter(file,false);
+			BufferedWriter bf = new BufferedWriter(fw);
+			PrintWriter pw = new PrintWriter(bf);
 			
-		
-	}
-	public static void writeContentToFile(String path) throws IOException {
-		if(readContentFromFile(path) != null) {
-			Clean(path);
-			write(path);
+			for(int i = 0 ; i < 4;i++)
+			{
+				String a;
+				a = sc.nextLine();
+				pw.print(a);
+				pw.flush();
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e.getMessage());
 		}
-		else {
-			write(path);
-		};
 		
 	}
-	public static void writeContentToFile2(String path) throws IOException {
+	public static void writeContentToFile1(String path) throws IOException {
 			File file = new File(path);
 			Scanner sc = new Scanner(System.in);
 			try {
@@ -100,11 +111,12 @@ public class Utils  {
 		return b;
 	}
 	public static void main(String[] args) throws IOException  {
-				
-//		System.out.println(readContentFromFile("Week9.txt"));
-//		writeContentToFile2("Week9.txt");
-//		System.out.println(readContentFromFile("Week9.txt"));
-//		writeContentToFile("Week9.txt");
+		//Clean("Week9.txt");
+		System.out.println(readContentFromFile("Week9.txt"));
+		writeContentToFile1("Week9.txt");
+		System.out.println(readContentFromFile("Week9.txt"));
+		writeContentToFile("Week9.txt");
+		System.out.println(readContentFromFile("Week9.txt"));
 		System.out.println(findFileByName("E:/Github/oop2018/oop2018/oop2018","Week9.txt").getName());
 	}
 }
