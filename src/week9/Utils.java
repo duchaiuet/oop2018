@@ -28,35 +28,7 @@ public class Utils {
 		return a;
 	}
 
-	public static void Clean(String path) throws IOException {
-		FileWriter fw = new FileWriter(path);
-		PrintWriter pw = new PrintWriter(fw);
-		pw.write("");
-		pw.flush();
-		pw.close();
-	}
 
-//	public static void write(String path) 
-//	{
-//		File file = new File(path);
-//		Scanner sc = new Scanner(System.in);
-//			try {
-//				FileWriter fw = new FileWriter(file);
-//				for(int i = 1; i <= 10; i++)
-//				{
-//					String a;
-//					a = sc.nextLine();
-//					fw.write(a + "\n");
-//					fw.flush();
-//				}
-//				fw.close();
-//			} catch (IOException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-//			
-//		
-//	}
 	public static void writeContentToFile(String path) throws IOException {
 		File file = new File(path);
 		Scanner sc = new Scanner(System.in);
@@ -98,7 +70,7 @@ public class Utils {
 		}
 	}
 
-	public static File findFileByName(String folderPath, String fileName) {
+	public static File findFileByName(String folderPath,String fileName) {
 		File dir = new File(folderPath);
 		File b = null;
 		File[] a = dir.listFiles();
